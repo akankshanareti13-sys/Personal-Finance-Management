@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Finance Dashboard</title>
+
+    <!-- CSS file -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="dashboard">
+
+        <!-- ================= SIDEBAR ================= -->
+        <aside class="sidebar">
+
+            <div class="logo">
+                <div class="logo-icon">₹</div>
+                <div>
+                    <h2>FinTrack</h2>
+                    <p>Personal Finance</p>
+                </div>
+            </div>
+
+            <nav>
+                <a href="#" class="active">
+                    <span>⌂</span> Dashboard
+                </a>
+
+                <a href="#">
+                    <span>↔</span> Transactions
+                </a>
+
+                <a href="#">
+                    <span>◉</span> Budgets
+                </a>
+
+                <a href="#">
+                    <span>▥</span> Analytics
+                </a>
+
+                <a href="#">
+                    <span>⚙</span> Settings
+                </a>
+            </nav>
+
+            <div class="sidebar-bottom">
+                <div class="tip">
+                    <span>💡</span>
+                    <div>
+                        <strong>Money Tip</strong>
+                        <p>Track your expenses regularly to stay within your budget.</p>
+                    </div>
+                </div>
+            </div>
+
+        </aside>
+
+
+        <!-- ================= MAIN CONTENT ================= -->
+        <main class="main-content">
+
+            <!-- Header -->
+            <header class="header">
+
+                <div>
+                    <p class="welcome">Welcome back 👋</p>
+                    <h1>Financial Overview</h1>
+                </div>
+
+                <div class="profile">
+                    <div class="notification">🔔</div>
+
+                    <div class="profile-circle">
+                        A
+                    </div>
+
+                    <div>
+                        <strong>Akanksha</strong>
+                        <p>Student</p>
+                    </div>
+                </div>
+
+            </header>
+
+
+            <!-- ================= SUMMARY CARDS ================= -->
+            <section class="summary-cards">
+
+                <div class="card balance-card">
+                    <div class="card-top">
+                        <div>
+                            <p>Total Balance</p>
+                            <h2>₹42,850</h2>
+                        </div>
+
+                        <div class="card-icon">₹</div>
+                    </div>
+
+                    <div class="growth positive">
+                        ↑ 8.4% <span>from last month</span>
+                    </div>
+                </div>
+
+
+                <div class="card">
+                    <div class="card-top">
+                        <div>
+                            <p>Total Income</p>
+                            <h2>₹55,000</h2>
+                        </div>
+
+                        <div class="card-icon income-icon">↗</div>
+                    </div>
+
+                    <div class="growth positive">
+                        ↑ 5.2% <span>from last month</span>
+                    </div>
+                </div>
+
+
+                <div class="card">
+                    <div class="card-top">
+                        <div>
+                            <p>Total Expenses</p>
+                            <h2>₹12,150</h2>
+                        </div>
+
+                        <div class="card-icon expense-icon">↘</div>
+                    </div>
+
+                    <div class="growth negative">
+                        ↓ 2.1% <span>from last month</span>
+                    </div>
+                </div>
+
+
+                <div class="card">
+                    <div class="card-top">
+                        <div>
+                            <p>Savings</p>
+                            <h2>₹42,850</h2>
+                        </div>
+
+                        <div class="card-icon saving-icon">◈</div>
+                    </div>
+
+                    <div class="growth positive">
+                        77.9% <span>savings rate</span>
+                    </div>
+                </div>
+
+            </section>
+
+
+            <!-- ================= CHART + BUDGET ================= -->
+            <section class="middle-section">
+
+                <!-- Spending Chart -->
+                <div class="panel chart-panel">
+
+                    <div class="panel-header">
+                        <div>
+                            <h2>Monthly Spending</h2>
+                            <p>Track your expenses throughout the month</p>
+                        </div>
+
+                        <select>
+                            <option>September 2026</option>
+                            <option>August 2026</option>
+                            <option>July 2026</option>
+                        </select>
+                    </div>
+
+
+                    <div class="chart">
+
+                        <div class="y-axis">
+                            <span>₹10k</span>
+                            <span>₹7.5k</span>
+                            <span>₹5k</span>
+                            <span>₹2.5k</span>
+                            <span>₹0</span>
+                        </div>
+
+                        <div class="bars">
+
+                            <div class="bar-item">
+                                <div class="bar bar1"></div>
+                                <span>Mon</span>
+                            </div>
+
+                            <div class="bar-item">
+                                <div class="bar bar2"></div>
+                                <span>Tue</span>
+                            </div>
+
+                            <div class="bar-item">
+                                <div class="bar bar3"></div>
+                                <span>Wed</span>
+                            </div>
+
+                            <div class="bar-item">
+                                <div class="bar bar4"></div>
+                                <span>Thu</span>
+                            </div>
+
+                            <div class="bar-item">
+                                <div class="bar bar5"></div>
+                                <span>Fri</span>
+                            </div>
+
+                            <div class="bar-item">
+                                <div class="bar bar6"></div>
+                                <span>Sat</span>
+                            </div>
+
+                            <div class="bar-item">
+                                <div class="bar bar7"></div>
+                                <span>Sun</span>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Budget -->
+                <div class="panel budget-panel">
+
+                    <div class="panel-header">
+                        <div>
+                            <h2>Monthly Budget</h2>
+                            <p>September 2026</p>
+                        </div>
+
+                        <span class="more">•••</span>
+                    </div>
+
+
+                    <div class="budget-total">
+                        <div>
+                            <p>Spent</p>
+                            <h2>₹12,150</h2>
+                        </div>
+
+                        <div class="budget-limit">
+                            <p>Budget</p>
+                            <strong>₹20,000</strong>
+                        </div>
+                    </div>
+
+
+                    <div class="progress">
+                        <div class="progress-fill"></div>
+                    </div>
+
+                    <p class="remaining">
+                        ₹7,850 remaining
+                    </p>
+
+
+                    <div class="budget-list">
+
+                        <div class="budget-row">
+                            <div>
+                                <span class="dot food"></span>
+                                Food
+                            </div>
+
+                            <strong>₹4,200</strong>
+                        </div>
+
+                        <div class="budget-row">
+                            <div>
+                                <span class="dot transport"></span>
+                                Transport
+                            </div>
+
+                            <strong>₹2,350</strong>
+                        </div>
+
+                        <div class="budget-row">
+                            <div>
+                                <span class="dot shopping"></span>
+                                Shopping
+                            </div>
+
+                            <strong>₹3,100</strong>
+                        </div>
+
+                        <div class="budget-row">
+                            <div>
+                                <span class="dot others"></span>
+                                Others
+                            </div>
+
+                            <strong>₹2,500</strong>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+            <!-- ================= BOTTOM SECTION ================= -->
+            <section class="bottom-section">
+
+
+                <!-- Recent Transactions -->
+                <div class="panel transactions-panel">
+
+                    <div class="panel-header">
+
+                        <div>
+                            <h2>Recent Transactions</h2>
+                            <p>Your latest financial activities</p>
+                        </div>
+
+                        <a href="#">View All →</a>
+
+                    </div>
+
+
+                    <div class="transaction">
+
+                        <div class="transaction-left">
+                            <div class="transaction-icon food-bg">
+                                🍔
+                            </div>
+
+                            <div>
+                                <strong>Food & Dining</strong>
+                                <p>Today, 1:20 PM</p>
+                            </div>
+                        </div>
+
+                        <strong class="expense">-₹450</strong>
+
+                    </div>
+
+
+                    <div class="transaction">
+
+                        <div class="transaction-left">
+                            <div class="transaction-icon shopping-bg">
+                                🛍️
+                            </div>
+
+                            <div>
+                                <strong>Shopping</strong>
+                                <p>Yesterday, 5:30 PM</p>
+                            </div>
+                        </div>
+
+                        <strong class="expense">-₹1,250</strong>
+
+                    </div>
+
+
+                    <div class="transaction">
+
+                        <div class="transaction-left">
+                            <div class="transaction-icon income-bg">
+                                💰
+                            </div>
+
+                            <div>
+                                <strong>Monthly Allowance</strong>
+                                <p>Sep 25, 10:00 AM</p>
+                            </div>
+                        </div>
+
+                        <strong class="income">+₹10,000</strong>
+
+                    </div>
+
+
+                    <div class="transaction">
+
+                        <div class="transaction-left">
+                            <div class="transaction-icon transport-bg">
+                                🚕
+                            </div>
+
+                            <div>
+                                <strong>Transportation</strong>
+                                <p>Sep 24, 8:45 AM</p>
+                            </div>
+                        </div>
+
+                        <strong class="expense">-₹300</strong>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Expense Categories -->
+                <div class="panel categories-panel">
+
+                    <div class="panel-header">
+
+                        <div>
+                            <h2>Expense Categories</h2>
+                            <p>Where your money goes</p>
+                        </div>
+
+                    </div>
+
+
+                    <div class="category">
+
+                        <div class="category-info">
+                            <div class="category-icon food-bg">🍔</div>
+
+                            <div>
+                                <strong>Food</strong>
+                                <p>₹4,200</p>
+                            </div>
+                        </div>
+
+                        <span>35%</span>
+
+                    </div>
+
+
+                    <div class="category">
+
+                        <div class="category-info">
+                            <div class="category-icon shopping-bg">🛍️</div>
+
+                            <div>
+                                <strong>Shopping</strong>
+                                <p>₹3,100</p>
+                            </div>
+                        </div>
+
+                        <span>26%</span>
+
+                    </div>
+
+
+                    <div class="category">
+
+                        <div class="category-info">
+                            <div class="category-icon transport-bg">🚕</div>
+
+                            <div>
+                                <strong>Transport</strong>
+                                <p>₹2,350</p>
+                            </div>
+                        </div>
+
+                        <span>19%</span>
+
+                    </div>
+
+
+                    <div class="category">
+
+                        <div class="category-info">
+                            <div class="category-icon others-bg">📦</div>
+
+                            <div>
+                                <strong>Others</strong>
+                                <p>₹2,500</p>
+                            </div>
+                        </div>
+
+                        <span>20%</span>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+            <!-- Footer -->
+            <footer>
+                <p>© 2026 FinTrack • Personal Finance Dashboard</p>
+            </footer>
+
+        </main>
+
+    </div>
+
+</body>
+</html>
